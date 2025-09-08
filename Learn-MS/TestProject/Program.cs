@@ -6,7 +6,7 @@ class Program
     {
         // var dice = new Random();
         Random dice = new();
-        int roll = dice.Next(1, 99);
+        int roll = dice.Next(1, 999);
         Console.WriteLine(roll);
 
         var result = new Random();
