@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenewalRate", "RenewalRate\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenewalRate2", "RenewalRate2\RenewalRate2.csproj", "{CC02B29E-7D7D-4B30-870B-6F424E42929B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject2", "TestProject2\TestProject2.csproj", "{C9497FE7-B0D6-4554-9903-30715ABC4A13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{CC02B29E-7D7D-4B30-870B-6F424E42929B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC02B29E-7D7D-4B30-870B-6F424E42929B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC02B29E-7D7D-4B30-870B-6F424E42929B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9497FE7-B0D6-4554-9903-30715ABC4A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9497FE7-B0D6-4554-9903-30715ABC4A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9497FE7-B0D6-4554-9903-30715ABC4A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9497FE7-B0D6-4554-9903-30715ABC4A13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
