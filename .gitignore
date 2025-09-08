@@ -1,0 +1,6 @@
+**/*.txt
+bin/
+obj/
+**/.vscode/
+**/workspace*
+
