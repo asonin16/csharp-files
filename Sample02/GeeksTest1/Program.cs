@@ -12,7 +12,7 @@ class Geeks
     // Destructor
     ~Geeks()
     {
-        Console.WriteLine("Object Destroyed.");
+        Console.WriteLine("~Object Destroyed.");
     }
 
     public void DisplayMessage()
