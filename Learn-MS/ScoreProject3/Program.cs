@@ -43,6 +43,8 @@ class Program
                 studentScores = emmaScores;
             else if (currentStudent == "Logan")
                 studentScores = loganScores;
+            else
+                continue;
 
             int gradedAssignments = 0;
             int gradedExtraCreditAssignments = 0;
