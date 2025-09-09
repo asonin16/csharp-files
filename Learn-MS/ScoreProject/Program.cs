@@ -22,23 +22,29 @@ class Program
         int[] studentScores = new int[10];
 
         string currentStudentLetterGrade = "";
-                
+
         // Write the Report Header to the console
+        Console.Clear();
         Console.WriteLine("Student\t\tGrade\n");
 
+        /*
+            The outer foreach loop is used to:
+            - iterate through student names 
+            - assign a student's grades to the studentScores array
+            - sum assignment scores (inner foreach loop)
+            - calculate numeric and letter grade
+            - write the score report information
+        */
         foreach (string name in studentNames)
         {
             string currentStudent = name;
 
             if (currentStudent == "Sophia")
                 studentScores = sophiaScores;
-
             else if (currentStudent == "Andrew")
                 studentScores = andrewScores;
-
             else if (currentStudent == "Emma")
                 studentScores = emmaScores;
-
             else if (currentStudent == "Logan")
                 studentScores = loganScores;
             else if (currentStudent == "Becky")
@@ -61,18 +67,17 @@ class Program
             // initialize/reset a counter for the number of assignment 
             int gradedAssignments = 0;
 
-            // loop through the scores array and complete calculations for currentStudent
+            /* 
+                The inner foreach loop sums assignment scores extra
+                credit assignments are worth 10% of an exam score
+            */
             foreach (int score in studentScores)
             {
-                // increment the assignment counter
                 gradedAssignments += 1;
 
                 if (gradedAssignments <= examAssignments)
-                    // add the exam score to the sum
                     sumAssignmentScores += score;
-
                 else
-                    // add the extra credit points to the sum - bonus points equal to 10% of an exam score
                     sumAssignmentScores += score / 10;
             }
 
@@ -80,40 +85,28 @@ class Program
 
             if (currentStudentGrade >= 97)
                 currentStudentLetterGrade = "A+";
-
             else if (currentStudentGrade >= 93)
                 currentStudentLetterGrade = "A";
-
             else if (currentStudentGrade >= 90)
                 currentStudentLetterGrade = "A-";
-
             else if (currentStudentGrade >= 87)
                 currentStudentLetterGrade = "B+";
-
             else if (currentStudentGrade >= 83)
                 currentStudentLetterGrade = "B";
-
             else if (currentStudentGrade >= 80)
                 currentStudentLetterGrade = "B-";
-
             else if (currentStudentGrade >= 77)
                 currentStudentLetterGrade = "C+";
-
             else if (currentStudentGrade >= 73)
                 currentStudentLetterGrade = "C";
-
             else if (currentStudentGrade >= 70)
                 currentStudentLetterGrade = "C-";
-
             else if (currentStudentGrade >= 67)
                 currentStudentLetterGrade = "D+";
-
             else if (currentStudentGrade >= 63)
                 currentStudentLetterGrade = "D";
-
             else if (currentStudentGrade >= 60)
                 currentStudentLetterGrade = "D-";
-
             else
                 currentStudentLetterGrade = "F";
 
