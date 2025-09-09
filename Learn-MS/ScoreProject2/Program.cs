@@ -43,9 +43,11 @@ class Program
                 studentScores = emmaScores;
             else if (currentStudent == "Logan")
                 studentScores = loganScores;
+            else
+                continue;
 
             // initialize/reset the sum of scored assignments
-            int sumAssignmentScores = 0;
+                int sumAssignmentScores = 0;
 
             // initialize/reset the calculated average of exam + extra credit scores
             decimal currentStudentGrade = 0;
