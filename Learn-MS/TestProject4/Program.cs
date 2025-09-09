@@ -5,26 +5,29 @@ class Program
     static void Main(string[] args)
     {
         /*
-        The following code reverses the srting and calculates the number of 'o'.
+            This code reverses a message, counts the number of times 
+            a particular character appears, then prints the results
+            to the console window.
         */
+        
         string str = "The quick brown fox jumps over the lazy dog.";
 
-        char[] charMessage = str.ToCharArray();
-        Array.Reverse(charMessage);
+        char[] message = str.ToCharArray();
+        Array.Reverse(message);
 
-        int x = 0;
+        int letterCount = 0;
 
-        foreach (char i in charMessage)
+        foreach (char letter in message)
         {
-            if (i == 'o')
+            if (letter == 'o')
             {
-                x++;
+                letterCount++;
             }
         }
-        var new_message = new String(charMessage);
 
-        Console.WriteLine(new_message);
-        
-        Console.WriteLine($"'o' appears {x} times.");
+        var newMessage = new String(message);
+
+        Console.WriteLine(newMessage);
+        Console.WriteLine($"'o' appears {letterCount} times.");
     }
 }
