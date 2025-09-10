@@ -57,9 +57,7 @@ class Program
         for (int i = 0; i < str.Length; i++)
         {
             if (char.ToLower(str[i]) == char.ToLower(ch))
-            {
                 count++;
-            }
         }
         return count;
     }
@@ -70,9 +68,7 @@ class Program
         for (int i = 0; i < str.Length; i++)
         {
             if (str[i] != ch)
-            {
                 result += str[i];
-            }
         }
         return result;
     }
@@ -83,13 +79,9 @@ class Program
         for (int i = 0; i < text.Length; i++)
         {
             if ((i + 1) % count != 0)
-            {
                 result += text[i];
-            }
             else
-            {
                 result += char.ToUpper(text[i]);
-            }
         }
         return result;
     }
@@ -101,13 +93,9 @@ class Program
         int length;
         
         if (str.Length % 2 == 0)
-        {
             length = str.Length;
-        }
         else
-        {
             length = str.Length - 1;
-        }
 
         for (int i = 0; i < length - 1; i += 2)
         {
@@ -116,9 +104,8 @@ class Program
         }
 
         if (str.Length % 2 != 0)
-        {
             result += str[str.Length - 1];
-        }
+
         return result;
         // END
     }
