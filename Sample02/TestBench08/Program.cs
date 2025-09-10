@@ -88,10 +88,9 @@ class Program
 
     public static string Encrypt(string str)
     {
-        // BEGIN (write your solution here)
         var result = "";
         int length;
-        
+
         if (str.Length % 2 == 0)
             length = str.Length;
         else
@@ -107,6 +106,5 @@ class Program
             result += str[str.Length - 1];
 
         return result;
-        // END
     }
 }
