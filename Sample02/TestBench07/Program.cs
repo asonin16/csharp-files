@@ -35,19 +35,17 @@ class Program
     public static string GetSentenceTone(string sentence)
     {
         if (sentence.Equals(sentence.ToUpper()))
-        {
             return "scream";
-        }
-        return "normal";
+        else
+            return "normal";
     }
 
     public static string NormalizeUrl(string input)
     {
         if (input.StartsWith("https://"))
-        {
             return input;
-        }
-        return $"https://{input}";
+        else
+            return $"https://{input}";
     }
 
     public static string GetTypeOfSentence(string sentence)
@@ -55,30 +53,22 @@ class Program
         string sentenceType;
 
         if (sentence.EndsWith('?'))
-        {
             sentenceType = "question";
-        }
         else if (sentence.EndsWith('!'))
-        {
             sentenceType = "exclamation";
-        }
         else
-        {
             sentenceType = "general";
-        }
+
         return $"Sentence is {sentenceType}";
     }
 
     public static string WhoIsThisHouseToStarks(string family)
     {
         if (family.Equals("Karstark") || family.Equals("Tally"))
-        {
             return "friend";
-        }
         else if (family.Equals("Lannister") || family.Equals("Frey"))
-        {
             return "enemy";
-        }
+
         return "neutral";
     }
 
