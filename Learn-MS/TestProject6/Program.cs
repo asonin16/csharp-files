@@ -6,7 +6,7 @@ class Program
     {
         int saleAmount = 1001;
         int discount = saleAmount > 1000 ? 100 : 50;
-        Console.WriteLine($"Discount: {discount}");
+        Console.WriteLine($"Discount: {discount}\n");
 
         int[] numbers = { 4, 8, 15, 16, 23, 42 };
         int total = 0;
