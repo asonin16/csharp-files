@@ -7,9 +7,9 @@ class Program
         // The instance field Name pertains to an instance of a particular Panda,
         // whereas Population pertains to the set of all Pandas:
 
-        Panda p1 = new Panda("Pan Dee");
-        Panda p2 = new Panda("Pan Dah");
-        Panda p3 = new Panda("Pan Dou");
+        var p1 = new Panda("Pan Dee");
+        var p2 = new Panda("Pan Dah");
+        var p3 = new Panda("Pan Dou");
 
         Console.WriteLine(p1.Name);      // Pan Dee
         Console.WriteLine(p2.Name);      // Pan Dah
@@ -23,8 +23,8 @@ class Program
         public static int Population;   // Static field
         public Panda (string n)         // Constructor
         {
-            Name = n;                      // Assign the instance field
-            Population = Population + 1;   // Increment the static Population field
+            Name = n;                   // Assign the instance field
+            Population++;               // Increment the static Population field
         }
     }
 }
