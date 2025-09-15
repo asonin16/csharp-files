@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchRewrite3", "SwitchRew
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject8", "TestProject8\TestProject8.csproj", "{71142D60-37DE-491F-AD05-28F34F78A86D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject9", "TestProject9\TestProject9.csproj", "{DB6D34A4-D52F-4C80-9813-1FCC87F2D090}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{71142D60-37DE-491F-AD05-28F34F78A86D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71142D60-37DE-491F-AD05-28F34F78A86D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71142D60-37DE-491F-AD05-28F34F78A86D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB6D34A4-D52F-4C80-9813-1FCC87F2D090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6D34A4-D52F-4C80-9813-1FCC87F2D090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6D34A4-D52F-4C80-9813-1FCC87F2D090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6D34A4-D52F-4C80-9813-1FCC87F2D090}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
