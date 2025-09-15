@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchRewrite2", "SwitchRew
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{BDD006F1-0F48-4E72-8423-685C6493650E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchRewrite3", "SwitchRewrite3\SwitchRewrite3.csproj", "{9A88D10A-93F8-42A6-99DF-ABCE6F98E139}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{BDD006F1-0F48-4E72-8423-685C6493650E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDD006F1-0F48-4E72-8423-685C6493650E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDD006F1-0F48-4E72-8423-685C6493650E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A88D10A-93F8-42A6-99DF-ABCE6F98E139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A88D10A-93F8-42A6-99DF-ABCE6F98E139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A88D10A-93F8-42A6-99DF-ABCE6F98E139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A88D10A-93F8-42A6-99DF-ABCE6F98E139}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
