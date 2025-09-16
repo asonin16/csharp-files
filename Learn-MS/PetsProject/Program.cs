@@ -277,14 +277,14 @@ class Program
                     break;
 
                 case "4":
-                    // Edit an animal’s age
+                    // Ensure animal nicknames and personality descriptions are complete"
                     Console.WriteLine("this app feature is coming soon - please check back to see progress.");
                     Console.WriteLine("Press the Enter key to continue.");
                     readResult = Console.ReadLine();
                     break;
 
                 case "5":
-                    // Add a new animal friend to the ourAnimals array
+                    // Edit an animal’s age
                     Console.WriteLine("this app feature is coming soon - please check back to see progress.");
                     Console.WriteLine("Press the Enter key to continue.");
                     readResult = Console.ReadLine();
