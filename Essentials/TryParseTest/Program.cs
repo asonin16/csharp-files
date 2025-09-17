@@ -7,6 +7,7 @@ public class Program
     {
         string? input;
 
+        Console.Clear();
         Console.Write("Enter a number: ");
         input = Console.ReadLine();
 
