@@ -1,6 +1,7 @@
-﻿using System;
+﻿namespace CommentSample;
 
-public class CommentSamples
+#region INCLUDE
+public class Program
 {
     public static void Main()
     {
@@ -20,3 +21,4 @@ public class CommentSamples
         // of the program listing
     }
 }
+#endregion INCLUDE
