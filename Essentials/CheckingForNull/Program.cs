@@ -7,6 +7,18 @@ public class Program
     {
         int? number = null;
 
+        string? text = "simple sentence";
+        int? length = text?.Length;
+
+        if (length is null)
+        {
+            Console.WriteLine("text was not created");
+        }
+        else
+        {
+            Console.WriteLine($"'text length' is {length}");
+        }
+
         #region EXCLUDE
         if (args.Length > 0)
         {
