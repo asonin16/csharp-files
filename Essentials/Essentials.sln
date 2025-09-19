@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectApp", "TestProje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLanguages", "ProgrammingLanguages\ProgrammingLanguages.csproj", "{9F0B7BB3-72FC-466E-A22D-358EA81A48F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciCalculator", "FibonacciCalculator\FibonacciCalculator.csproj", "{DC8B2670-FB36-4BB6-92B4-AE40D0AE64CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +62,9 @@ Global
 		{9F0B7BB3-72FC-466E-A22D-358EA81A48F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F0B7BB3-72FC-466E-A22D-358EA81A48F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F0B7BB3-72FC-466E-A22D-358EA81A48F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8B2670-FB36-4BB6-92B4-AE40D0AE64CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8B2670-FB36-4BB6-92B4-AE40D0AE64CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8B2670-FB36-4BB6-92B4-AE40D0AE64CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8B2670-FB36-4BB6-92B4-AE40D0AE64CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
