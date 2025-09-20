@@ -1,6 +1,6 @@
-﻿namespace AnotherTest6;
+﻿using System.Globalization;
 
-using System.Globalization;
+namespace AnotherTest6;
 
 class Program
 {
