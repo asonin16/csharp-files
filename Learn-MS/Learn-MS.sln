@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetsProject2", "PetsProject
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotherTest2", "AnotherTest2\AnotherTest2.csproj", "{D88F1109-AF8A-44A4-93FA-464384CF9D44}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotherTest3", "AnotherTest3\AnotherTest3.csproj", "{893B5926-5A5A-4879-8FBA-7C501ECE3F50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{D88F1109-AF8A-44A4-93FA-464384CF9D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D88F1109-AF8A-44A4-93FA-464384CF9D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D88F1109-AF8A-44A4-93FA-464384CF9D44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{893B5926-5A5A-4879-8FBA-7C501ECE3F50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{893B5926-5A5A-4879-8FBA-7C501ECE3F50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{893B5926-5A5A-4879-8FBA-7C501ECE3F50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{893B5926-5A5A-4879-8FBA-7C501ECE3F50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
