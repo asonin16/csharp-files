@@ -9,13 +9,14 @@ class Program
         CultureInfo.CurrentCulture = new CultureInfo("en-US");
 
         string[] values = { "12.3", "45", "ABC", "11", "DEF" };
+
+        decimal total = 0m;
         string message = "";
-        float total = 0;
 
         foreach (var value in values)
         {
-            if (float.TryParse(value, out float result))
-                total += result;
+            if (decimal.TryParse(value, out decimal number))
+                total += number;
             else
                 message += value;
         }
