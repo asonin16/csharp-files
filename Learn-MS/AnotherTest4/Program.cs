@@ -5,6 +5,8 @@ class Program
     static void Main(string[] args)
     {
         string value = "102";
+        // int result = 0;
+        
         if (int.TryParse(value, out int result))
         {
             Console.WriteLine($"Measurement: {result}");
@@ -13,6 +15,10 @@ class Program
         {
             Console.WriteLine("Unable to report the measurement.");
         }
-        Console.WriteLine($"Measurement (w/ offset): {50 + result}");
+
+        if (result > 0)
+        {
+            Console.WriteLine($"Measurement (w/ offset): {50 + result}");
+        }
     }
 }
