@@ -15,13 +15,9 @@ class Program
         foreach (var value in values)
         {
             if (float.TryParse(value, out float result))
-            {
                 total += result;
-            }
             else
-            {
                 message += value;
-            }
         }
 
         Console.WriteLine($"Message: {message}");
