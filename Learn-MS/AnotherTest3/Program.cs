@@ -7,7 +7,7 @@ class Program
         int first = 2;
         string second = "4";
         string result = first + second;
-        Console.WriteLine(result);
+        Console.WriteLine($"result: {result}");
 
         int myInt1 = 3;
         Console.WriteLine($"myInt1: {myInt1}");
@@ -27,17 +27,17 @@ class Program
         int third = 5;
         int fourth = 7;
         string message = third.ToString() + fourth.ToString();
-        Console.WriteLine(message);
+        Console.WriteLine($"int -> str : {message}");
 
         string fifth = "5";
         string sixth = "7";
         int sum56 = int.Parse(fifth) + int.Parse(sixth);
-        Console.WriteLine(sum56);
+        Console.WriteLine($"str -> int : {sum56}");
 
         string value1 = "5";
         string value2 = "7";
         int res12 = Convert.ToInt32(value1) * Convert.ToInt32(value2);
-        Console.WriteLine(res12);
+        Console.WriteLine($"Convert: {res12}");
 
         string value3 = "5";
         string value4 = "7";
@@ -46,11 +46,11 @@ class Program
         if (!int.TryParse(value4, out int res4))
             Console.WriteLine();
         int res34 = res3 + res4;
-        Console.WriteLine(res34);
+        Console.WriteLine($"TryParse: {res34}");
 
         int value5 = (int)1.5m; // casting truncates
-        Console.WriteLine(value5);
+        Console.WriteLine($"Casting: {value5}");
         int value6 = Convert.ToInt32(1.5m); // converting rounds up
-        Console.WriteLine(value6);
+        Console.WriteLine($"Convert: {value6}");
     }
 }
