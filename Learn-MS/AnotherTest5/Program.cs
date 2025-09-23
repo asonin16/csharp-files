@@ -16,9 +16,13 @@ class Program
         foreach (var value in values)
         {
             if (decimal.TryParse(value, out decimal number))
+            {
                 total += number;
+            }
             else
+            {
                 message += value;
+            }
         }
 
         Console.WriteLine($"Message: {message}");
