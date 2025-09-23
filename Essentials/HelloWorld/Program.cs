@@ -1,6 +1,5 @@
 ﻿namespace HelloWorld;
 
-#region INCLUDE
 public class Program
 {
     public static void Main()
@@ -8,4 +7,3 @@ public class Program
         Console.WriteLine("Hello. My name is Inigo Montoya.");
     }
 }
-#endregion INCLUDE

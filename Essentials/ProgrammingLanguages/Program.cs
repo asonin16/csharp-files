@@ -4,7 +4,6 @@ public class Program
 {
     public static void Main()
     {
-        #region INCLUDE
         var languages = new string[] {"C#", "COBOL", "Java", "C++", "TypeScript", "Swift", "Python", "Lisp", "JavaScript"};
 
         Array.Sort(languages);
@@ -29,6 +28,5 @@ public class Program
 
         Console.WriteLine($"{ languages[0],-20 }\t{ languages[^1],-20 }");
         Console.WriteLine($"After clearing, the array size is: { languages.Length }");
-        #endregion INCLUDE
     }
 }

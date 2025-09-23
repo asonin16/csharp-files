@@ -1,6 +1,5 @@
 ﻿namespace HeyYou;
 
-#region INCLUDE
 public class Program
 {
     public static void Main()
@@ -19,4 +18,3 @@ public class Program
         Console.WriteLine($"Your full name is {firstName} {lastName}.");
     }
 }
-#endregion INCLUDE

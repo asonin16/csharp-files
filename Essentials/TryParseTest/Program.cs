@@ -1,6 +1,5 @@
 ﻿namespace TryParseTest;
 
-#region INCLUDE
 public class Program
 {
     public static void Main()
@@ -23,4 +22,3 @@ public class Program
         Console.WriteLine($"'number' currently has the value: {number}");
     }
 }
-#endregion INCLUDE

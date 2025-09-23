@@ -1,6 +1,5 @@
 ﻿namespace PalindromeLength;
 
-#region INCLUDE
 public class Program
 {
     public static void Main()
@@ -15,4 +14,3 @@ public class Program
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
     }
 }
-#endregion INCLUDE

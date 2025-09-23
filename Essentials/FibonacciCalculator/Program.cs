@@ -4,7 +4,6 @@ public class Program
 {
     public static void Main()
     {
-        #region INCLUDE
         decimal current;
         decimal previous;
         decimal temp;
@@ -31,6 +30,5 @@ public class Program
         }
 
         Console.WriteLine($"The Fibonacci number following this is { current }");
-        #endregion INCLUDE
     }
 }
