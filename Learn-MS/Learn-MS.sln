@@ -85,6 +85,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringFormatting2", "String
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringFormatting3", "StringFormatting3\StringFormatting3.csproj", "{60FDFF5D-2DA0-4C76-B047-EE2AE1F765D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringFormatting4", "StringFormatting4\StringFormatting4.csproj", "{D25B67B3-951C-43AC-8D21-B9B36C1B20C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -255,6 +257,10 @@ Global
 		{60FDFF5D-2DA0-4C76-B047-EE2AE1F765D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60FDFF5D-2DA0-4C76-B047-EE2AE1F765D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60FDFF5D-2DA0-4C76-B047-EE2AE1F765D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D25B67B3-951C-43AC-8D21-B9B36C1B20C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25B67B3-951C-43AC-8D21-B9B36C1B20C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25B67B3-951C-43AC-8D21-B9B36C1B20C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25B67B3-951C-43AC-8D21-B9B36C1B20C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
