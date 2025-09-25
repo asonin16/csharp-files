@@ -55,9 +55,9 @@ public class TicTacToeGame      // Declares the TicTacToeGame class.
         do
         {
             // Request a move from the current player.
-            System.Console.Write($"\nPlayer {currentPlayer} - Enter move:");
+            Console.Write($"\nPlayer {currentPlayer} - Enter move:");
             // TODO: Update listing in Manuscript
-            input = System.Console.ReadLine();
+            input = Console.ReadLine();
             validMove = ValidateAndMove(playerPositions,
                           currentPlayer, input);
         } while (!validMove);
@@ -70,7 +70,7 @@ public class TicTacToeGame      // Declares the TicTacToeGame class.
         bool endGame = false;
         if (winner > 0)
         {
-            System.Console.WriteLine($"\nPlayer {winner} has won!!!!");
+            Console.WriteLine($"\nPlayer {winner} has won!!!!");
             endGame = true;
         }
         else if (turn == 10)
@@ -78,14 +78,14 @@ public class TicTacToeGame      // Declares the TicTacToeGame class.
             // After completing the 10th display of the
             // board, exit rather than prompting the
             // user again.
-            System.Console.WriteLine("\nThe game was a tie!");
+            Console.WriteLine("\nThe game was a tie!");
             endGame = true;
         }
         else if (input.Length == 0 || input == "quit")
         {
             // Check if user quit by hitting Enter without 
             // any characters or by typing "quit".
-            System.Console.WriteLine("The last player quit");
+            Console.WriteLine("The last player quit");
             endGame = true;
         }
         return endGame;
@@ -165,7 +165,7 @@ public class TicTacToeGame      // Declares the TicTacToeGame class.
             default:
                 // If none of the other case statements
                 // is encountered, then the text is invalid.
-                System.Console.WriteLine(
+                Console.WriteLine(
                     "\nERROR:  Enter a value from 1-9. "
                     + "Push ENTER to quit");
                 break;
@@ -187,7 +187,7 @@ public class TicTacToeGame      // Declares the TicTacToeGame class.
         int border = 0;  // set the first border (border[0] = "|").
 
 #if CSHARP2PLUS
-        System.Console.Clear();
+        Console.Clear();
 #endif
 
         for (int position = 1;
@@ -199,7 +199,7 @@ public class TicTacToeGame      // Declares the TicTacToeGame class.
 
             // Write out a cell value and the border that 
             // comes after it.
-            System.Console.Write($" {token} {borders[border]}");
+            Console.Write($" {token} {borders[border]}");
         }
     }
 
