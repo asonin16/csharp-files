@@ -132,6 +132,7 @@ class Program
                     }
                     Console.WriteLine("\n\rPress the Enter key to continue");
                     readResult = Console.ReadLine();
+
                     break;
 
                 case "2":
@@ -159,10 +160,12 @@ class Program
                         {
                             // #7 Search combined descriptions and report results
                             dogDescription = ourAnimals[i, 4] + "\n" + ourAnimals[i, 5];
+
                             if (dogDescription.Contains(dogCharacteristic))
                             {
                                 Console.WriteLine($"\nOur dog {ourAnimals[i, 3]} is a match!");
                                 Console.WriteLine(dogDescription);
+                                
                                 noMatchesDog = false;
                             }
                         }
@@ -175,6 +178,7 @@ class Program
 
                     Console.WriteLine("Press the Enter key to continue.");
                     readResult = Console.ReadLine();
+
                     break;
 
                 default:
