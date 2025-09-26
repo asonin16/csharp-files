@@ -1,4 +1,4 @@
-﻿namespace TestProject;
+﻿namespace TestProject1;
 
 class Program
 {
