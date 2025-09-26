@@ -165,7 +165,6 @@ class Program
                     // #4 update to "rotating" animation with countdown
                     string[] searchingIcons = {" |", " /", "--", " \\", " *"};
 
-
                     bool matchesAnyDog = false;
                     string dogDescription = "";
 
@@ -174,7 +173,6 @@ class Program
                     {
                         if (ourAnimals[i, 1].Contains("dog"))
                         {
-
                             // Search combined descriptions and report results
                             dogDescription = ourAnimals[i, 4] + "\n" + ourAnimals[i, 5];
                             bool matchesCurrentDog = false;
