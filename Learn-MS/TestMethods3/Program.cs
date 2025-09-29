@@ -3,11 +3,13 @@
 class Program
 {
     const double pi = 3.14159;
-    static void Main(string[] args)
+
+    static void Main()
     {
         PrintCircleInfo(12);
         PrintCircleInfo(24);
-            }
+        PrintCircleInfo(36);
+    }
 
     static void PrintCircleInfo(int radius)
     {
