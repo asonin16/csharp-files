@@ -115,6 +115,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMethods5", "TestMethods
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMethods6", "TestMethods6\TestMethods6.csproj", "{7990DFD7-4E7B-4AB8-B8C8-3E55ED9E7ED6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayEmailAddress", "DisplayEmailAddress\DisplayEmailAddress.csproj", "{53C18D9F-A6DC-4BFD-B867-1CC90BB7A2E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -345,6 +347,10 @@ Global
 		{7990DFD7-4E7B-4AB8-B8C8-3E55ED9E7ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7990DFD7-4E7B-4AB8-B8C8-3E55ED9E7ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7990DFD7-4E7B-4AB8-B8C8-3E55ED9E7ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53C18D9F-A6DC-4BFD-B867-1CC90BB7A2E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53C18D9F-A6DC-4BFD-B867-1CC90BB7A2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53C18D9F-A6DC-4BFD-B867-1CC90BB7A2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53C18D9F-A6DC-4BFD-B867-1CC90BB7A2E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
