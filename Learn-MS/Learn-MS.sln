@@ -109,6 +109,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMethods2", "TestMethods
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMethods3", "TestMethods3\TestMethods3.csproj", "{45985000-249A-43ED-B3FE-CB49D2246F5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMethods4", "TestMethods4\TestMethods4.csproj", "{CCBBEC12-4BCC-497B-A394-60E79753E248}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -327,6 +329,10 @@ Global
 		{45985000-249A-43ED-B3FE-CB49D2246F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45985000-249A-43ED-B3FE-CB49D2246F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45985000-249A-43ED-B3FE-CB49D2246F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCBBEC12-4BCC-497B-A394-60E79753E248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCBBEC12-4BCC-497B-A394-60E79753E248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCBBEC12-4BCC-497B-A394-60E79753E248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCBBEC12-4BCC-497B-A394-60E79753E248}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
