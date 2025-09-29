@@ -2,7 +2,7 @@
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
         int[] schedule = { 800, 1200, 1600, 2000 };
         DisplayAdjustedTimes(schedule, 6, -6);
@@ -27,7 +27,7 @@ class Program
 
         for (int i = 0; i < times.Length; i++)
         {
-            int newTime = ((times[i] + diff)) % 2400;
+            int newTime = (times[i] + diff) % 2400;
             Console.WriteLine($"{times[i]} -> {newTime}");
         }
     }
