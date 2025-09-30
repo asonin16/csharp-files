@@ -131,6 +131,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateTotalPrice", "Calc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMethods7", "TestMethods7\TestMethods7.csproj", "{642EEF82-305C-4385-B7AB-DBF1D12EA805}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RewerseWordTest", "RewerseWordTest\RewerseWordTest.csproj", "{9CD2EC64-2D2E-47F6-89EC-2013260ACC24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -393,6 +395,10 @@ Global
 		{642EEF82-305C-4385-B7AB-DBF1D12EA805}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{642EEF82-305C-4385-B7AB-DBF1D12EA805}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{642EEF82-305C-4385-B7AB-DBF1D12EA805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD2EC64-2D2E-47F6-89EC-2013260ACC24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD2EC64-2D2E-47F6-89EC-2013260ACC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD2EC64-2D2E-47F6-89EC-2013260ACC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD2EC64-2D2E-47F6-89EC-2013260ACC24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
