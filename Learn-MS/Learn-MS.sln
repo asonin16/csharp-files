@@ -135,6 +135,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RewerseWordTest", "RewerseW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMethods8", "TestMethods8\TestMethods8.csproj", "{6EEA9CE6-1E0B-443C-82F4-17B4E09A3DD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoCoinsTest", "TwoCoinsTest\TwoCoinsTest.csproj", "{DE9A8AF0-8115-4FE0-AC58-433FDAA0E0F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -405,6 +407,10 @@ Global
 		{6EEA9CE6-1E0B-443C-82F4-17B4E09A3DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EEA9CE6-1E0B-443C-82F4-17B4E09A3DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EEA9CE6-1E0B-443C-82F4-17B4E09A3DD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE9A8AF0-8115-4FE0-AC58-433FDAA0E0F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9A8AF0-8115-4FE0-AC58-433FDAA0E0F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9A8AF0-8115-4FE0-AC58-433FDAA0E0F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9A8AF0-8115-4FE0-AC58-433FDAA0E0F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
