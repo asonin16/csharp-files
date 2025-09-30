@@ -119,6 +119,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayEmailAddress", "Disp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayEmailAddress2", "DisplayEmailAddress2\DisplayEmailAddress2.csproj", "{D2EECF92-BF2E-4913-9A14-8475AA1B7C46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayRandomNumbers", "DisplayRandomNumbers\DisplayRandomNumbers.csproj", "{AB617B11-70A8-4B72-AC9C-2E24791DBEA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -357,6 +359,10 @@ Global
 		{D2EECF92-BF2E-4913-9A14-8475AA1B7C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2EECF92-BF2E-4913-9A14-8475AA1B7C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2EECF92-BF2E-4913-9A14-8475AA1B7C46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB617B11-70A8-4B72-AC9C-2E24791DBEA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB617B11-70A8-4B72-AC9C-2E24791DBEA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB617B11-70A8-4B72-AC9C-2E24791DBEA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB617B11-70A8-4B72-AC9C-2E24791DBEA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
