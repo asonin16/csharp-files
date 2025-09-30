@@ -123,6 +123,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayRandomNumbers", "Dis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayAndAdjustTimes", "DisplayAndAdjustTimes\DisplayAndAdjustTimes.csproj", "{D61C3942-2424-4F58-BB9C-19F0A2F9E87D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidateIPAddress", "ValidateIPAddress\ValidateIPAddress.csproj", "{3645B201-3B40-48C5-AFD9-001CABDEC436}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -369,6 +371,10 @@ Global
 		{D61C3942-2424-4F58-BB9C-19F0A2F9E87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D61C3942-2424-4F58-BB9C-19F0A2F9E87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D61C3942-2424-4F58-BB9C-19F0A2F9E87D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3645B201-3B40-48C5-AFD9-001CABDEC436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3645B201-3B40-48C5-AFD9-001CABDEC436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3645B201-3B40-48C5-AFD9-001CABDEC436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3645B201-3B40-48C5-AFD9-001CABDEC436}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
