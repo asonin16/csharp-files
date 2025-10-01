@@ -36,6 +36,10 @@ class Program
             if (FoodConsumed())
             {
                 FreezePlayer();
+                if (food == 2)
+                {
+                    player = states[2];
+                }
                 ChangePlayer();
                 ShowFood();
             }
