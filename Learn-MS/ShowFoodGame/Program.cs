@@ -29,9 +29,24 @@ class Program
         int food = 0;
 
         InitializeGame();
-        while (!shouldExit) 
+        while (!shouldExit)
         {
             Move();
+
+            if (FoodConsumed())
+            {
+                FreezePlayer();
+                ChangePlayer();
+                ShowFood();
+            }
+        }
+
+        Console.Clear();
+
+        // Checks, if the food was consumed
+        bool FoodConsumed()
+        {
+            return playerX == foodX && playerY == foodY;
         }
 
         // Returns true if the Terminal was resized 
@@ -71,33 +86,33 @@ class Program
         }
 
         // Reads directional input from the Console and moves the player
-        void Move() 
+        void Move()
         {
             int lastX = playerX;
             int lastY = playerY;
-            
-            switch (Console.ReadKey(true).Key) 
+
+            switch (Console.ReadKey(true).Key)
             {
                 case ConsoleKey.UpArrow:
-                    playerY--; 
+                    playerY--;
                     break;
-                case ConsoleKey.DownArrow: 
-                    playerY++; 
+                case ConsoleKey.DownArrow:
+                    playerY++;
                     break;
-                case ConsoleKey.LeftArrow:  
-                    playerX--; 
+                case ConsoleKey.LeftArrow:
+                    playerX--;
                     break;
-                case ConsoleKey.RightArrow: 
-                    playerX++; 
+                case ConsoleKey.RightArrow:
+                    playerX++;
                     break;
-                case ConsoleKey.Escape:     
-                    shouldExit = true; 
+                case ConsoleKey.Escape:
+                    shouldExit = true;
                     break;
             }
 
             // Clear the characters at the previous position
             Console.SetCursorPosition(lastX, lastY);
-            for (int i = 0; i < player.Length; i++) 
+            for (int i = 0; i < player.Length; i++)
             {
                 Console.Write(" ");
             }
@@ -109,6 +124,12 @@ class Program
             // Draw the player at the new location
             Console.SetCursorPosition(playerX, playerY);
             Console.Write(player);
+
+            // Change the exit condition, if Terminal was resized
+            if (TerminalResized())
+            {
+                shouldExit = true;
+            }
         }
 
         // Clears the console, displays the food and player
