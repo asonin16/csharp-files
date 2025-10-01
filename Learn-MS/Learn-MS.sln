@@ -145,6 +145,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowFoodGame", "ShowFoodGam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowFoodGame2", "ShowFoodGame2\ShowFoodGame2.csproj", "{3A396574-6383-4926-BA28-F377F37AFBDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeDebugging", "CodeDebugging\CodeDebugging.csproj", "{65879D87-111D-4DC1-8044-9D026DEEA83D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -435,6 +437,10 @@ Global
 		{3A396574-6383-4926-BA28-F377F37AFBDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A396574-6383-4926-BA28-F377F37AFBDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A396574-6383-4926-BA28-F377F37AFBDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65879D87-111D-4DC1-8044-9D026DEEA83D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65879D87-111D-4DC1-8044-9D026DEEA83D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65879D87-111D-4DC1-8044-9D026DEEA83D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65879D87-111D-4DC1-8044-9D026DEEA83D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
