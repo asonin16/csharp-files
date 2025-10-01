@@ -139,6 +139,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoCoinsTest", "TwoCoinsTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShouldPlayTest", "ShouldPlayTest\ShouldPlayTest.csproj", "{894AB037-B470-4433-A190-931FEE5D469A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PettingZooTest", "PettingZooTest\PettingZooTest.csproj", "{A144DAE3-2C31-4BC6-B365-9C23126F793B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -417,6 +419,10 @@ Global
 		{894AB037-B470-4433-A190-931FEE5D469A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{894AB037-B470-4433-A190-931FEE5D469A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{894AB037-B470-4433-A190-931FEE5D469A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A144DAE3-2C31-4BC6-B365-9C23126F793B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A144DAE3-2C31-4BC6-B365-9C23126F793B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A144DAE3-2C31-4BC6-B365-9C23126F793B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A144DAE3-2C31-4BC6-B365-9C23126F793B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
