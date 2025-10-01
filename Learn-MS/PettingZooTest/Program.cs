@@ -11,10 +11,17 @@ class Program
             "ostriches", "pigs", "ponies", "rabbits", "sheep", "tortoises",
         };
 
-        RandomizeAnimals();
-        string[,] group = AssignGroup();
-        Console.WriteLine("School A");
-        PrintGroup(group);
+        PlanSchoolVisit("School A");
+        PlanSchoolVisit("School B", 3);
+        PlanSchoolVisit("School C", 2);
+
+        void PlanSchoolVisit(string schoolName, int groups = 6) 
+        {
+            RandomizeAnimals(); 
+            string[,] group = AssignGroup(groups);
+            Console.WriteLine(schoolName);
+            PrintGroup(group);
+        }
 
         void RandomizeAnimals()
         {
