@@ -60,6 +60,8 @@ class Program
             }
         }
 
+        Console.Clear();
+
         // Returns true if the Terminal was resized 
         bool TerminalResized() 
         {
