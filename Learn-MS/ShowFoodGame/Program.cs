@@ -2,7 +2,7 @@
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
         var random = new Random();
         Console.CursorVisible = false;
@@ -85,7 +85,7 @@ class Program
         // Temporarily stops the player from moving
         void FreezePlayer() 
         {
-            System.Threading.Thread.Sleep(1000);
+            Thread.Sleep(1000);
             player = states[0];
         }
 
