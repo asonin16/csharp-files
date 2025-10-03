@@ -21,9 +21,9 @@ class Program
 
         try
         {
-            string str = null;
-            int length = str.Length;
-            Console.WriteLine("String Length: " + length);
+            // string str = null;
+            // int length = str.Length;
+            // Console.WriteLine("String Length: " + length);
         }
         catch (NullReferenceException ex)
         {
