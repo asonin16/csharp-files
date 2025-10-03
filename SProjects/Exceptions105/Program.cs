@@ -15,7 +15,7 @@ class Program
             }
             catch (OverflowException ex)
             {
-                Console.WriteLine("Error: The number is too large to be represented as an integer." + ex.Message);
+                Console.WriteLine("Error: The number is too large to be represented as an integer. " + ex.Message);
             }
         }
 
@@ -27,7 +27,7 @@ class Program
         }
         catch (NullReferenceException ex)
         {
-            Console.WriteLine("Error: The reference is null." + ex.Message);
+            Console.WriteLine("Error: The reference is null. " + ex.Message);
         }
 
         try
@@ -38,7 +38,7 @@ class Program
         }
         catch (IndexOutOfRangeException ex)
         {
-            Console.WriteLine("Error: Index out of range." + ex.Message);
+            Console.WriteLine("Error: Index out of range. " + ex.Message);
         }
 
         try
@@ -50,7 +50,7 @@ class Program
         }       
         catch (DivideByZeroException ex)
         {
-            Console.WriteLine("Error: Cannot divide by zero." + ex.Message);
+            Console.WriteLine("Error: Cannot divide by zero. " + ex.Message);
         }
 
         Console.WriteLine("Exiting program.");
