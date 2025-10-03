@@ -21,7 +21,7 @@ class Program
             {
                 WriteMessage();
             }
-            catch (Exception ex)
+            catch (DivideByZeroException ex)
             {
                 Console.WriteLine($"Exception caught in Process1: {ex.Message}");
             }
@@ -33,9 +33,28 @@ class Program
             double float2 = 0.0;
             int number1 = 3000;
             int number2 = 0;
+            byte smallNumber;
 
-            Console.WriteLine(float1 / float2);
-            Console.WriteLine(number1 / number2);
+            try
+            {
+                Console.WriteLine(float1 / float2);
+                Console.WriteLine(number1 / number2);
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine($"Exception caught in WriteMessage: {ex.Message}");
+            }
+            checked
+            {
+                try
+                {
+                    smallNumber = (byte)number1;
+                }
+                catch (OverflowException ex)
+                {
+                    Console.WriteLine($"Exception caught in WriteMessage: {ex.Message}");
+                }
+            }
         }
     }
 }
