@@ -6,10 +6,12 @@ class Program
     {
         // Prompt the user for the lower and upper bounds
         Console.Write("Enter the lower bound: ");
-        int lowerBound = int.Parse(Console.ReadLine());
+        string? userInput1 = Console.ReadLine() ?? throw new NullReferenceException();
+        int lowerBound = int.Parse(userInput1);
 
         Console.Write("Enter the upper bound: ");
-        int upperBound = int.Parse(Console.ReadLine());
+        string? userInput2 = Console.ReadLine() ?? throw new NullReferenceException();
+        int upperBound = int.Parse(userInput2);
 
         decimal averageValue = 0;
         bool exit = false;
@@ -32,7 +34,7 @@ class Program
                 Console.WriteLine(ex.Message);
                 Console.WriteLine($"The upper bound must be greater than {lowerBound}");
                 Console.Write($"Enter a new upper bound (or enter Exit to quit): ");
-                string? userResponse = Console.ReadLine();
+                string? userResponse = Console.ReadLine() ?? throw new NullReferenceException();
                 if (userResponse.ToLower().Contains("exit"))
                 {
                     exit = true;
@@ -43,7 +45,7 @@ class Program
                     upperBound = int.Parse(userResponse);
                 }
             }
-            
+
         } while (exit == false);
 
         // Wait for user input
@@ -53,7 +55,7 @@ class Program
         {
             if (lowerBound >= upperBound)
             {
-                throw new ArgumentOutOfRangeException("upperBound", "ArgumentOutOfRangeException: upper bound must be greater than lower bound.");
+                throw new ArgumentOutOfRangeException(nameof(upperBound), "ArgumentOutOfRangeException: upper bound must be greater than lower bound.");
             }
 
             int sum = 0;
@@ -73,5 +75,6 @@ class Program
 
             return average;
         }
+        
     }
 }
