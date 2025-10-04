@@ -2,10 +2,6 @@
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project123", "Project123\Project123.csproj", "{B067D676-B58E-1A43-0CB3-64680958ABFA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project456", "Project456\Project456.csproj", "{0C89A87E-0C09-F310-B54A-B87CF708EAA7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debug101X", "Debug101X\Debug101X.csproj", "{26AB93FF-6434-4D6C-A556-1A538BEE9E4E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debug102X", "Debug102X\Debug102X.csproj", "{EDE44E23-4C8D-4BA2-9736-4337E0082AE6}"
