@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions109", "Exceptions
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions110", "Exceptions110\Exceptions110.csproj", "{6229DBFB-AF1E-4701-94C0-8B10D7B5799B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeChangeTest101", "MakeChangeTest101\MakeChangeTest101.csproj", "{3519C49E-C2CD-4864-BD42-182404D617D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -106,6 +108,10 @@ Global
 		{6229DBFB-AF1E-4701-94C0-8B10D7B5799B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6229DBFB-AF1E-4701-94C0-8B10D7B5799B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6229DBFB-AF1E-4701-94C0-8B10D7B5799B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3519C49E-C2CD-4864-BD42-182404D617D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3519C49E-C2CD-4864-BD42-182404D617D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3519C49E-C2CD-4864-BD42-182404D617D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3519C49E-C2CD-4864-BD42-182404D617D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
