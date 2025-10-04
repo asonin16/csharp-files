@@ -108,6 +108,7 @@ class Program
 
         } while (readResult == null);
 
+        // Static methods below: LoadTillEachMorning(), MakeChange(), LogTillStatus(), TillAmountSummary()
 
         static void LoadTillEachMorning(int[,] registerDailyStartingCash, int[] cashTill)
         {
@@ -116,7 +117,6 @@ class Program
             cashTill[2] = registerDailyStartingCash[2, 1];
             cashTill[3] = registerDailyStartingCash[3, 1];
         }
-
 
         static string MakeChange(int cost, int[] cashTill, int twenties, int tens = 0, int fives = 0, int ones = 0)
         {
