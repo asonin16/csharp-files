@@ -15,6 +15,7 @@ class Program
         {
             Workflow1(userEnteredValues);
             Console.WriteLine("'Workflow1' completed successfully");
+            Console.WriteLine();
         }
         catch (DivideByZeroException ex)
         {
@@ -70,5 +71,6 @@ class Program
                 }
             }
         }
+        
     }
 }
