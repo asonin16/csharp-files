@@ -70,10 +70,47 @@ class Program
                 testCounter += 1;
             }
 
-            int paymentOnes = itemCost % 2;                 // value is 1 when itemCost is odd, value is 0 when itemCost is even
-            int paymentFives = (itemCost % 10 > 7) ? 1 : 0; // value is 1 when itemCost ends with 8 or 9, otherwise value is 0
-            int paymentTens = (itemCost % 20 > 13) ? 1 : 0; // value is 1 when 13 < itemCost < 20 OR 33 < itemCost < 40, otherwise value is 0
-            int paymentTwenties = (itemCost < 20) ? 1 : 2;  // value is 1 when itemCost < 20, otherwise value is 2
+            // int paymentOnes = itemCost % 2;                 // value is 1 when itemCost is odd, value is 0 when itemCost is even
+            // int paymentFives = (itemCost % 10 > 7) ? 1 : 0; // value is 1 when itemCost ends with 8 or 9, otherwise value is 0
+            // int paymentTens = (itemCost % 20 > 13) ? 1 : 0; // value is 1 when 13 < itemCost < 20 OR 33 < itemCost < 40, otherwise value is 0
+            // int paymentTwenties = (itemCost < 20) ? 1 : 2;  // value is 1 when itemCost < 20, otherwise value is 2
+
+            int paymentOnes = 0;
+            int paymentFives = 0;
+            int paymentTens = 0;
+            int paymentTwenties = 0;
+
+            if (itemCost > 40)
+            {
+                paymentTwenties = 2;
+                paymentTens = 1;
+            }
+            else if (itemCost > 30)
+            {
+                paymentTwenties = 2;
+            }
+            else if (itemCost > 20)
+            {
+                paymentTwenties = 1;
+                paymentTens = 1;
+            }
+            else if (itemCost > 15)
+            {
+                paymentTwenties = 1;
+            }
+            else if (itemCost > 10)
+            {
+                paymentTens = 1;
+                paymentFives = 1;
+            }
+            else if (itemCost > 5)
+            {
+                paymentTens = 1;
+            }
+            else
+            {
+                paymentOnes = itemCost;
+            }
 
             // display messages describing the current transaction
             Console.WriteLine($"Customer is making a ${itemCost} purchase");
@@ -119,10 +156,10 @@ class Program
 
         static void MakeChange(int cost, int[] cashTill, int twenties, int tens = 0, int fives = 0, int ones = 0)
         {
-            cashTill[3] += twenties;
-            cashTill[2] += tens;
-            cashTill[1] += fives;
-            cashTill[0] += ones;
+            int availableTwenties = cashTill[3] + twenties;
+            int availableTens = cashTill[2] + tens;
+            int availableFives = cashTill[1] + fives;
+            int availableOnes = cashTill[0] + ones;
 
             int amountPaid = twenties * 20 + tens * 10 + fives * 5 + ones;
             int changeNeeded = amountPaid - cost;
@@ -130,39 +167,43 @@ class Program
             if (changeNeeded < 0)
                 throw new InvalidOperationException("InvalidOperationException: Not enough money provided to complete the transaction.");
 
-            Console.WriteLine("Cashier Returns:");
+            Console.WriteLine("Cashier prepares the following change:");
 
-            while ((changeNeeded > 19) && (cashTill[3] > 0))
+            while ((changeNeeded > 19) && (availableTwenties > 0))
             {
-                cashTill[3]--;
+                availableTwenties--;
                 changeNeeded -= 20;
                 Console.WriteLine("\t A twenty");
             }
 
-            while ((changeNeeded > 9) && (cashTill[2] > 0))
+            while ((changeNeeded > 9) && (availableTens > 0))
             {
-                cashTill[2]--;
+                availableTens--;
                 changeNeeded -= 10;
                 Console.WriteLine("\t A ten");
             }
 
-            while ((changeNeeded > 4) && (cashTill[1] > 0))
+            while ((changeNeeded > 4) && (availableFives > 0))
             {
-                cashTill[1]--;
+                availableFives--;
                 changeNeeded -= 5;
                 Console.WriteLine("\t A five");
             }
 
-            while ((changeNeeded > 0) && (cashTill[0] > 0))
+            while ((changeNeeded > 0) && (availableOnes > 0))
             {
-                cashTill[0]--;
-                changeNeeded--;
+                availableOnes--;
+                changeNeeded -= 1;
                 Console.WriteLine("\t A one");
             }
 
             if (changeNeeded > 0)
-                throw new InvalidOperationException("InvalidOperationException: The till is unable to make the correct change.");
+                throw new InvalidOperationException("InvalidOperationException: The till is unable to make change for the cash provided.");
 
+            cashTill[0] = availableOnes;
+            cashTill[1] = availableFives;
+            cashTill[2] = availableTens;
+            cashTill[3] = availableTwenties;
         }
 
         static void LogTillStatus(int[] cashTill)
