@@ -1,11 +1,11 @@
 ﻿namespace NewProject203;
 
-enum Geometry { Square, Circle, Triangle, Quadrant, Rectangle};
+enum Geometry {Square, Circle, Triangle, Quadrant, Rectangle};
 
 struct Point(int x, int y)
 {
     public int x = x, y = y;
-    public override string ToString()
+    public override readonly string ToString()
     {
         return $"(x: {x}, y: {y})";
     }
@@ -15,7 +15,7 @@ struct Circle(Point center, int radius)
 {
     public Point c = center;
     public int r = radius;
-    public override string ToString()
+    public override readonly string ToString()
     {
         return $"c: {c}, r: {r}";
     }
@@ -24,7 +24,7 @@ struct Circle(Point center, int radius)
 struct Line(Point p1, Point p2)
 {
     public Point p1 = p1, p2 = p2;
-        public override string ToString()
+    public override readonly string ToString()
     {
         return $"p1: {p1}, p2: {p2}";
     }
