@@ -29,13 +29,13 @@ class Program
                 continue;
             }
 
-            int result = number;
+            int result = number % 100;
 
-            if (number > 20)
+            if (result > 20)
             {
                 result %= 10;
             }
-            else if (number > 4)
+            else if (result > 4)
             {
                 result = 0;
             }
