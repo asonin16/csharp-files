@@ -21,7 +21,6 @@ class Program
         Console.WriteLine();
 
         int a = 2;
-
         while (a < 1000)
         {
             Console.WriteLine(a);
@@ -35,6 +34,37 @@ class Program
             Console.WriteLine(a);
             a *= 2;
         } while (a < 1000);
+        Console.WriteLine();
+
+        string[] names = ["Alexey", "Alice", "Maria", "Tatiana"];
+        foreach (var name in names)
+        {
+            Console.WriteLine(name);
+        }
+        Console.WriteLine();
+
+        IList<string> names2 = new List<string>() { "Alexey", "Alice", "Maria", "Tatiana" };
+        names2.Add("Polina");
+        foreach (var name in names2)
+        {
+            Console.WriteLine(name);
+        }
+        Console.WriteLine();
+
+        ICollection<string> names3 = new List<string>() { "Alexey", "Alice", "Maria", "Tatiana", "Maria"};
+        IEnumerator<string> en = names3.GetEnumerator();
+        while (en.MoveNext())
+        {
+            string name = en.Current;
+            Console.WriteLine(name);
+        }
+        Console.WriteLine();
+
+        var results = names3.Distinct().ToList();
+        foreach (var name in results)
+        {
+            Console.WriteLine(name);
+        }
         Console.WriteLine();
     }
 }
