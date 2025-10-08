@@ -54,17 +54,25 @@ class Program
         int[] d1 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         Range r = 2..6;
         int[] d2 = d1[r];
+        
         foreach (int d in d1)
+        {
             Console.Write(d);
+        }
         Console.WriteLine();
+
         foreach (int d in d2)
+        {
             Console.Write(d);
+        }
         Console.WriteLine();
 
         // #ARRAY IN STACK#
         Span<int> numbers = stackalloc int[] { 23, 34, 45, 56, 67 };
         foreach (int number in numbers)
+        {
             Console.WriteLine(number);
+        }
         Console.WriteLine();
     }
 }
