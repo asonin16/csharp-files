@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography;
-
-namespace NewProject402;
+﻿namespace NewProject402;
 
 class Program
 {

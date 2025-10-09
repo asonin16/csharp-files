@@ -1,6 +1,3 @@
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
-
 namespace NewProject402;
 
 public class Circle(int X, int Y, int radius)
