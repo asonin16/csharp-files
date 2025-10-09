@@ -19,6 +19,11 @@ public class Circle(int X, int Y, int radius)
         }
     }
 
+    public void Draw()
+    {
+        Console.WriteLine($"Circle: X = {X,2}, Y = {Y,2}, Radius = {Radius,2}");
+    }
+
     public void MoveBy(int dx, int dy)
     {
         X += dx;

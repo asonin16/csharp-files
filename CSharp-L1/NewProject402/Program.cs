@@ -11,9 +11,19 @@ class Program
         p1.Draw();
         p2.Draw();
         p3.Draw();
+        p3.MoveBy(2, 2);
+        p3.Draw();
 
-        var l1 = new Line(p1, p2);
+        var l1 = new Line(5, 6, 10, 8);
+        l1.Draw();
+        l1.MoveBy(-2, -2);
+        l1.Draw();
 
         var c1 = new Circle(0, 0, 4);
+        c1.Draw();
+        c1.MoveBy(3, 3);
+        c1.Draw();
+        c1.Scale(2.5);
+        c1.Draw();
     }
 }
