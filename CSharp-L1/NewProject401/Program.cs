@@ -4,6 +4,20 @@ internal class Program
 {
     static void Main(string[] args)
     {
+        var p1 = new Person("Sergey", 48);
+        var p2 = new Person("Sergey", 48);
+        Console.WriteLine(p1);
+        Console.WriteLine(p2.ToString());
+        Console.WriteLine(p1 == p2);
+        Console.WriteLine(p1.Equals(p2));
+
+        var p3 = new Person2("Alexey", 55);
+        var p4 = new Person2("Alexey", 55);
+        Console.WriteLine(p3);
+        Console.WriteLine(p4.ToString());
+        Console.WriteLine(p3 == p4);
+        Console.WriteLine(p3.Equals(p4));
+
         // var c1 = new Course();
         // c1.Title = "C# Language";
         // c1.Length = 40;
