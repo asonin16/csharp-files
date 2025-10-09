@@ -1,30 +1,20 @@
 namespace NewProject404;
 
-public class Circle : Shape
+public class Circle(int X1, int Y1, int radius) : Shape(X1, Y1)
 {
-    public int Radius { get; set; }
-    
-    // private int radius = radius;
-    // public int Radius
-    // {
-    //     get { return radius; }
-    //     set
-    //     {
-    //         if (value < 0)
-    //         {
-    //             throw new Exception();
-    //         }
-    //         radius = value;
-    //     }
-    // }
-
-    public Circle(int X1, int Y1, int Radius)
-        : base(X1, Y1)
+    private int radius = radius;
+    public int Radius
     {
-        this.Radius = Radius;
+        get { return radius; }
+        set
+        {
+            if (value < 0)
+            {
+                throw new Exception();
+            }
+            radius = value;
+        }
     }
-
-    
 
     public override void Draw()
     {

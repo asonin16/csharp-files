@@ -2,16 +2,10 @@ using System;
 
 namespace NewProject404;
 
-public class Line : Shape
+public class Line(int X1, int Y1, int X2, int Y2) : Shape(X1, Y1)
 {
-    public int X2 { get; set; }
-    public int Y2 { get; set; }
-    public Line(int X1, int Y1, int X2, int Y2)
-        : base(X1, Y1)
-    {
-        this.X2 = X2;
-        this.Y2 = Y2;
-    }
+    public int X2 { get; set; } = X2;
+    public int Y2 { get; set; } = Y2;
 
     public override void Draw()
     {
