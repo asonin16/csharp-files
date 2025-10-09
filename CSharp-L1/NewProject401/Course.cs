@@ -13,7 +13,7 @@ public class Course
 
     public string Title { get; set; } = "New course";
 
-    public string Description { get; }  // Read-only property
+    public string Description { get; set; }  // Read-only property
 
     private int length2;
 
@@ -33,7 +33,7 @@ public class Course
     // }
 
     // Property:
-    public int Length2
+    public virtual int Length2
     {
         get { return length2; }
         set
@@ -70,7 +70,7 @@ public class Course
         Counter++;
     }
 
-    public void Show()
+    public virtual void Show()
     {
         Console.WriteLine($"{Title} : {Description} : {Length2}");
     }

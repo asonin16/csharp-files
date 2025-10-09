@@ -11,4 +11,3 @@ public record class Person2 (string Name, int Age)  // primary constructor
     public string Name { get; set; } = Name;
     public int Age { get; set; } = Age;
 }
-

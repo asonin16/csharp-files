@@ -1,8 +1,10 @@
-﻿namespace NewProject401;
+﻿using Microsoft.VisualBasic;
+
+namespace NewProject401;
 
 internal class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
         var p1 = new Person("Sergey", 48);
         var p2 = new Person("Sergey", 48);
@@ -46,5 +48,43 @@ internal class Program
         c6.Show();
 
         Course.PrintCounter();
+
+        var rc1 = new RemoteCourse("Title", "Description", 40, "www.specialist.ru");
+        // {
+        //     Title = "Title",
+        //     Description = "Description",
+        //     Length2 = 40,
+        //     Url = "www.specialist.ru"
+        // };
+
+        rc1.Show();
+        rc1.Connect();
+
+        var c7 = rc1;
+        // var rc2 = (RemoteCourse)c4;
+        // rc2.Show();
+        // rc2.Connect();
+
+        // if (c7 is RemoteCourse)
+        // {
+        //     var rc2 = (RemoteCourse)c4;
+        //     rc2.Show();
+        //     rc2.Connect();
+        // }
+
+        if (c7 is RemoteCourse rc3)
+        {
+            rc3.Show();
+            rc3.Connect();
+        }
+
+        var rc4 = c4 as RemoteCourse;
+        rc4?.Show();
+        rc4?.Connect();
+
+        Course.PrintCounter();
+
+        // RemoteCourse.PrintCounter();
+
     }
 }
