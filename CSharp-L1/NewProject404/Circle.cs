@@ -1,8 +1,10 @@
 namespace NewProject404;
 
-public class Circle(int X1, int Y1, int radius) : Shape(X1, Y1)
+public class Circle : Shape
 {
-    private int radius = radius;
+    public int X { get; set; }
+    public int Y { get; set; }
+    private int radius;
     public int Radius
     {
         get { return radius; }
@@ -16,9 +18,17 @@ public class Circle(int X1, int Y1, int radius) : Shape(X1, Y1)
         }
     }
 
+    public Circle(int x, int y, int radius, string color)
+    : base(color)
+    {
+        X = x;
+        Y = y;
+        Radius = radius;
+    }
+
     public override void Draw()
     {
-        Console.WriteLine($"Circle: X = {X,2}, Y = {Y,2}, Radius = {Radius,2}");
+        Console.WriteLine($"Circle: X = {X,2}, Y = {Y,2}, Radius = {Radius,2}, Color = {Color}");
     }
 
 }
