@@ -3,10 +3,10 @@ namespace BookSample;
 public class Book
 {
     // Private field for the book's title
-    private string _title;
+    private string? _title;
 
     // Property to encapsulate the title field with validation
-    public string Title
+    public string? Title
     {
         get => _title;
         set
@@ -21,9 +21,8 @@ public class Book
     public string Author { get; }
 
     // Constructor to initialize both title and author
-#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
+
     public Book(string title, string author)
-#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
     {
         Title = title;
         Author = string.IsNullOrWhiteSpace(author)
@@ -37,4 +36,3 @@ public class Book
         Console.WriteLine($"Title: {Title}, Author: {Author}");
     }
 }
-
