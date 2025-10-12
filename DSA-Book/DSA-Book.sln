@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable101", "HashTable10
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable102", "HashTable102\HashTable102.csproj", "{E5CA9DF4-F1F2-4D10-A4E9-0E60F3F5625F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIctionary101", "DIctionary101\DIctionary101.csproj", "{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary101", "Dictionary101\DIctionary101.csproj", "{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

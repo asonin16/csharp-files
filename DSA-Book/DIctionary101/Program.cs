@@ -1,4 +1,4 @@
-﻿namespace DIctionary101;
+﻿namespace Dictionary101;
 
 class Program
 {
