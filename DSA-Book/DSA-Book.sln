@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable101", "HashTable10
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable102", "HashTable102\HashTable102.csproj", "{E5CA9DF4-F1F2-4D10-A4E9-0E60F3F5625F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIctionary101", "DIctionary101\DIctionary101.csproj", "{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{E5CA9DF4-F1F2-4D10-A4E9-0E60F3F5625F}.Release|x64.Build.0 = Release|Any CPU
 		{E5CA9DF4-F1F2-4D10-A4E9-0E60F3F5625F}.Release|x86.ActiveCfg = Release|Any CPU
 		{E5CA9DF4-F1F2-4D10-A4E9-0E60F3F5625F}.Release|x86.Build.0 = Release|Any CPU
+		{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}.Debug|x64.Build.0 = Debug|Any CPU
+		{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}.Debug|x86.Build.0 = Debug|Any CPU
+		{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}.Release|x64.ActiveCfg = Release|Any CPU
+		{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}.Release|x64.Build.0 = Release|Any CPU
+		{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}.Release|x86.ActiveCfg = Release|Any CPU
+		{E326FAD5-38CC-4CF4-9CBD-C5242347DE9A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
