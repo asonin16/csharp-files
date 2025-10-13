@@ -5,7 +5,9 @@ public class Employee
     public string? FirstName;
     public string? LastName;
     public string? Salary;
-
+    private string? Password;
+    private bool IsAuthenticated;
+    
     public string GetName()
     {
         return $"{ FirstName } { LastName }";
@@ -23,4 +25,19 @@ public class Employee
     {
         DataStorage.Store(this);
     }
+
+    public bool Logon(string password)
+    {
+        if (Password == password)
+        {
+            IsAuthenticated = true;
+        }
+        return IsAuthenticated;
+    }
+
+    public bool GetIsAuthenticated()
+    {
+        return IsAuthenticated;
+    }
+
 }
