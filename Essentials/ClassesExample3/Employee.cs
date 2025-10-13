@@ -18,8 +18,7 @@ public class Employee(string firstName, string lastName)
         }
         set
         {
-            // Split the assigned value into 
-            // first and last names
+            // Split the assigned value into first and last names
             string[] names = value.Split(' ');
             if (names.Length == 2)
             {
@@ -28,8 +27,7 @@ public class Employee(string firstName, string lastName)
             }
             else
             {
-                // Throw an exception if the full 
-                // name was not assigned
+                // Throw an exception if the full name was not assigned
                 throw new ArgumentException($"Assigned value '{value}' is invalid", nameof(value));
             }
         }
