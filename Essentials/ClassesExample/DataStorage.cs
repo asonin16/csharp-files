@@ -1,5 +1,3 @@
-using System;
-
 namespace ClassesExample;
 
 public class DataStorage
@@ -35,8 +33,7 @@ public class DataStorage
         // Instantiate a FileStream using FirstNameLastName.dat
         // for the filename. FileMode.Open will open
         // an existing file or else report an error
-        FileStream stream = new(
-            firstName + lastName + ".dat", FileMode.Open);
+        FileStream stream = new(firstName + lastName + ".dat", FileMode.Open);
 
         // Create a StreamReader for reading text from the file
         StreamReader reader = new(stream);
