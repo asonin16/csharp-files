@@ -15,6 +15,8 @@ internal class Program
         Employee employee3 = new();
         employee3.Name = "Barry White";
         Console.WriteLine(employee3.Name);
+        Console.WriteLine(employee3.FirstName);
+        Console.WriteLine(employee3.LastName);
         Console.WriteLine(employee3.Initials());
     }
 }

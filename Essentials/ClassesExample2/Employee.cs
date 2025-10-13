@@ -40,9 +40,7 @@ public class Employee
     public string Name
     {
         get
-        {
-            return $"{ FirstName } { LastName }";
-        }
+        { return $"{ FirstName } { LastName }"; }
         set
         {
 
