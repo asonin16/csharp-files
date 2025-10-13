@@ -39,8 +39,7 @@ public class Employee
     // Name property
     public string Name
     {
-        get
-        { return $"{ FirstName } { LastName }"; }
+        get { return $"{ FirstName } { LastName }"; }
         set
         {
 
@@ -57,7 +56,7 @@ public class Employee
             // first and last names
             string[] names;
             names = value.Split(new char[] { ' ' });
-            if(names.Length == 2)
+            if (names.Length == 2)
             {
                 FirstName = names[0];
                 LastName = names[1];
