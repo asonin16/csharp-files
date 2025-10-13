@@ -9,10 +9,13 @@ public class Employee(string firstName, string lastName)
     public string? Title { get; set; }
     public Employee? Manager { get; set; }
 
-    // Name property
+    // FullName property
     public string FullName
     {
-        get { return FirstName + " " + LastName; }
+        get
+        {
+            return FirstName + " " + LastName;
+        }
         set
         {
             // Split the assigned value into 
