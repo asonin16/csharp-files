@@ -2,12 +2,25 @@ namespace ClassesExample;
 
 public class Employee
 {
-    public string? FirstName;
-    public string? LastName;
-    public string? Salary;
+    public string? FirstName
+    {
+        get { return _FirstName; }
+        set { _FirstName = value; }
+    }
+    private string? _FirstName;
+    public string? LastName
+    {
+        get { return _LastName; }
+        set { _LastName = value; }
+    }
+    private string? _LastName;
+    public string? Title { get; set; }
+    public Employee? Manager { get; set; }
+    public string? Salary { get; set; } = "Not Enough";
+/*
     private string? Password;
     private bool IsAuthenticated;
-    
+*/ 
     public string GetName()
     {
         return $"{ FirstName } { LastName }";
@@ -25,7 +38,7 @@ public class Employee
     {
         DataStorage.Store(this);
     }
-
+/*
     public bool Logon(string password)
     {
         if (Password == password)
@@ -39,5 +52,5 @@ public class Employee
     {
         return IsAuthenticated;
     }
-
+*/
 }

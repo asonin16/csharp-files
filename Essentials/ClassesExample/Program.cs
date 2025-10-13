@@ -4,9 +4,17 @@ internal class Program
 {
     public static void Main(string[] args)
     {
-        Employee employee1;
-
+        Employee employee1 = new();
         Employee employee2 = new();
+
+        employee1.FirstName = "Inigo";
+        Console.WriteLine(employee1.FirstName);
+
+        employee2.Title = "Computer Nerd";
+        employee1.Manager = employee2;
+
+        Console.WriteLine(employee1.Manager.Title);
+
         employee2.SetName("Inigo", "Montoya");
         employee2.Save();
 
