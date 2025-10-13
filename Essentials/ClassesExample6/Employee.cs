@@ -8,7 +8,6 @@ public class Employee
     {
         int id;
         // Generate an employee ID...
-
         id = 0; // id needs to be initialized for this example
 
         Initialize(id, firstName, lastName);
@@ -57,8 +56,7 @@ public class Employee
         }
         set
         {
-            // Split the assigned value into 
-            // first and last names
+            // Split the assigned value into first and last names
             string[] names;
             names = value.Split(new char[] { ' ' });
             if(names.Length == 2)
@@ -68,10 +66,8 @@ public class Employee
             }
             else
             {
-                // Throw an exception if the full 
-                // name was not assigned
-                throw new System.ArgumentException(
-                    $"Assigned value '{value}' is invalid");
+                // Throw an exception if the full name was not assigned
+                throw new System.ArgumentException($"Assigned value '{value}' is invalid");
             }
         }
     }
