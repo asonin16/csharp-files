@@ -1,4 +1,6 @@
-﻿namespace TestProjectApp;
+﻿using System.Collections;
+
+namespace TestProjectApp;
 
 class Program
 {
@@ -10,5 +12,19 @@ class Program
         char[] ch = ['A', 'B', 'C', 'D', 'E', 'F'];
         Console.WriteLine(new string(ch[..]));
         Console.WriteLine(string.Join("", ch[..].Reverse()));
+
+        string s = "Hello, CSharp";
+
+        IEnumerator rator = s.GetEnumerator();
+        while (rator.MoveNext())
+        {
+            char c = (char)rator.Current;
+            Console.Write(c + ".");
+        }
+        
+        Console.WriteLine();
+
+        foreach (char c in s)
+            Console.Write(c + ".");
     }
 }
