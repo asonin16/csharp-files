@@ -21,10 +21,20 @@ class Program
             char c = (char)rator.Current;
             Console.Write(c + ".");
         }
-        
+
         Console.WriteLine();
 
         foreach (char c in s)
             Console.Write(c + ".");
+
+        Console.WriteLine();
+
+        string[] names = { "Tom", "Dick", "Harry", "Mary", "Jay" };
+        IEnumerable<string> query = names
+            .Where (n => n.Contains('a'))
+            .OrderBy (n => n.Length)
+            .Select (n => n.ToUpper());
+        foreach (string name2 in query)
+            Console.WriteLine (name2);
     }
 }
