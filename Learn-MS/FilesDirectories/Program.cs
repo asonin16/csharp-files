@@ -1,19 +1,41 @@
-﻿namespace FilesDirectories;
+﻿using Newtonsoft.Json;
+using System.Globalization;
+
+namespace FilesDirectories;
 
 internal class Program
 {
     static void Main(string[] args)
     {
+        CultureInfo.CurrentCulture = new CultureInfo("en-US");
+
         var currentDirectory = Directory.GetCurrentDirectory();
         var storesDirectory = Path.Combine(currentDirectory, "stores");
 
+        var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
+
+        if (!Directory.Exists(salesTotalDir))
+        {
+            Directory.CreateDirectory(salesTotalDir);
+        }
+
         var salesFiles = FindFiles(storesDirectory);
 
-        foreach (var file in salesFiles)
-        {
-            Console.WriteLine(file);
-        }
-        
+        var salesTotal = CalculateSalesTotal(salesFiles);
+
+        File.AppendAllText(Path.Combine(salesTotalDir, "totals.txt"), $"{salesTotal}{Environment.NewLine}");
+
+        // foreach (var file in salesFiles)
+        // {
+        //     Console.WriteLine(file);
+        // }
+
+        // Directory.CreateDirectory(Path.Combine(Directory.GetCurrentDirectory(), "stores", "201", "newDir"));
+
+        // bool doesDirectoryExist = Directory.Exists(filePath);
+
+        // File.WriteAllText(Path.Combine(Directory.GetCurrentDirectory(), "greeting.txt"), "Hello World!");
+
         /*
         Console.WriteLine(Directory.GetCurrentDirectory());
         Console.WriteLine($"stores{Path.DirectorySeparatorChar}201");
@@ -31,7 +53,7 @@ internal class Program
 
         // var salesFiles = FindFiles(@"C:\Users\asoni\Documents\csharp-learn\mslearn-dotnet-files\stores");
         // var salesFiles = FindFiles("stores");
-        
+
     }
 
     static IEnumerable<string> FindFiles(string folderName)
@@ -53,10 +75,32 @@ internal class Program
             {
                 salesFiles.Add(file);
             }
-    
+
         }
 
         return salesFiles;
     }
+
+    static decimal CalculateSalesTotal(IEnumerable<string> salesFiles)
+    {
+        decimal salesTotal = 0;
+
+        // Loop over each file path in salesFiles
+        foreach (var file in salesFiles)
+        {
+            // Read the contents of the file
+            string salesJson = File.ReadAllText(file);
+
+            // Parse the contents as JSON
+            SalesTotal? data = JsonConvert.DeserializeObject<SalesTotal?>(salesJson);
+
+            // Add the amount found in the Total field to the salesTotal variable
+            salesTotal += data?.Total ?? 0;
+        }
+
+        return salesTotal;
+    }
+
+    // record SalesData (double Total);
 
 }
