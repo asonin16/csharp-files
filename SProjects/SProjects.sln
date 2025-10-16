@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections104", "Collectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumStructRecords101", "EnumStructRecords101\EnumStructRecords101.csproj", "{D969CE06-E14F-4607-8B60-4DBC810F760C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumStructRecords102", "EnumStructRecords102\EnumStructRecords102.csproj", "{921976E1-F05E-4204-9ED5-D39784EF83E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -363,6 +365,18 @@ Global
 		{D969CE06-E14F-4607-8B60-4DBC810F760C}.Release|x64.Build.0 = Release|Any CPU
 		{D969CE06-E14F-4607-8B60-4DBC810F760C}.Release|x86.ActiveCfg = Release|Any CPU
 		{D969CE06-E14F-4607-8B60-4DBC810F760C}.Release|x86.Build.0 = Release|Any CPU
+		{921976E1-F05E-4204-9ED5-D39784EF83E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{921976E1-F05E-4204-9ED5-D39784EF83E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{921976E1-F05E-4204-9ED5-D39784EF83E0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{921976E1-F05E-4204-9ED5-D39784EF83E0}.Debug|x64.Build.0 = Debug|Any CPU
+		{921976E1-F05E-4204-9ED5-D39784EF83E0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{921976E1-F05E-4204-9ED5-D39784EF83E0}.Debug|x86.Build.0 = Debug|Any CPU
+		{921976E1-F05E-4204-9ED5-D39784EF83E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{921976E1-F05E-4204-9ED5-D39784EF83E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{921976E1-F05E-4204-9ED5-D39784EF83E0}.Release|x64.ActiveCfg = Release|Any CPU
+		{921976E1-F05E-4204-9ED5-D39784EF83E0}.Release|x64.Build.0 = Release|Any CPU
+		{921976E1-F05E-4204-9ED5-D39784EF83E0}.Release|x86.ActiveCfg = Release|Any CPU
+		{921976E1-F05E-4204-9ED5-D39784EF83E0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
