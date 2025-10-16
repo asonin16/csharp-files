@@ -1,0 +1,28 @@
+﻿namespace DelegateSample;
+
+delegate double Mean(double a, double b, double c);
+
+internal class Program
+{
+    static void Main()
+    {
+        // Lambda expression
+        Mean arithmetic = (a, b, c) => (a + b + c) / 3;
+
+        // Anonymous method
+        Mean geometric = delegate (double a, double b, double c)
+        { return Math.Pow(a * b * c, 1 / 3.0); };
+
+        // Named method
+        Mean harmonic = Harmonic;
+
+        double a = arithmetic.Invoke(5, 6.5, 7);
+        double g = geometric.Invoke(5, 6.5, 7);
+        double h = harmonic.Invoke(5, 6.5, 7);
+
+        Console.WriteLine($"{a:F2} / {g:F2} / {h:F2}");
+
+        double Harmonic(double a, double b, double c) =>
+        3 / ((1 / a) + (1 / b) + (1 / c));
+    }
+}

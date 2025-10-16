@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary101", "Dictionary
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordSample", "RecordSample\RecordSample.csproj", "{EB47B443-F90A-4667-926B-C30251C4C4AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateSample", "DelegateSample\DelegateSample.csproj", "{FBFE5E14-CBFF-4862-909D-48CB76142076}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,18 @@ Global
 		{EB47B443-F90A-4667-926B-C30251C4C4AC}.Release|x64.Build.0 = Release|Any CPU
 		{EB47B443-F90A-4667-926B-C30251C4C4AC}.Release|x86.ActiveCfg = Release|Any CPU
 		{EB47B443-F90A-4667-926B-C30251C4C4AC}.Release|x86.Build.0 = Release|Any CPU
+		{FBFE5E14-CBFF-4862-909D-48CB76142076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBFE5E14-CBFF-4862-909D-48CB76142076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBFE5E14-CBFF-4862-909D-48CB76142076}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FBFE5E14-CBFF-4862-909D-48CB76142076}.Debug|x64.Build.0 = Debug|Any CPU
+		{FBFE5E14-CBFF-4862-909D-48CB76142076}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FBFE5E14-CBFF-4862-909D-48CB76142076}.Debug|x86.Build.0 = Debug|Any CPU
+		{FBFE5E14-CBFF-4862-909D-48CB76142076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBFE5E14-CBFF-4862-909D-48CB76142076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBFE5E14-CBFF-4862-909D-48CB76142076}.Release|x64.ActiveCfg = Release|Any CPU
+		{FBFE5E14-CBFF-4862-909D-48CB76142076}.Release|x64.Build.0 = Release|Any CPU
+		{FBFE5E14-CBFF-4862-909D-48CB76142076}.Release|x86.ActiveCfg = Release|Any CPU
+		{FBFE5E14-CBFF-4862-909D-48CB76142076}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
