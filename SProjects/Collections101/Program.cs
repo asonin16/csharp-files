@@ -9,10 +9,15 @@ internal class Program
         // Example: Adding, removing, and iterating through a List<T>
 
         // Define the type T as string for this list
-        var books = new List<string>(); // T is string
-        books.Add("Book A"); // Add a string to the list
-        books.Add("Book B");
-        books.Add("Book C");
+        var books = new List<string>
+        {
+            "Book A", // Add a string to the list
+            "Book B",
+            "Book C",
+            "Book D",
+            "Book E",
+            "Book F"
+        }; // T is string
         books.Remove("Book A"); // Remove a specific string from the list
 
         foreach (string book in books) // Iterate through the list
@@ -24,6 +29,11 @@ internal class Program
         // Expected output:
         // Book B
         // Book C
+
+        Console.WriteLine($"Length: {books.Count}");
+        Console.WriteLine($"Capacity: {books.Capacity}");
+
+        // Alternative (non-generic) collection - ArrayList
 
         var numbers = new ArrayList() { 123, 456, 789, 900, 500 };
 
