@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumStructRecords103", "Enu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumStructRecords104", "EnumStructRecords104\EnumStructRecords104.csproj", "{E4A8FC11-2654-43C6-9BAD-901A871BF60D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumStructRecords105", "EnumStructRecords105\EnumStructRecords105.csproj", "{5F811470-592E-416E-A3B8-A5CB1C592322}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -405,6 +407,18 @@ Global
 		{E4A8FC11-2654-43C6-9BAD-901A871BF60D}.Release|x64.Build.0 = Release|Any CPU
 		{E4A8FC11-2654-43C6-9BAD-901A871BF60D}.Release|x86.ActiveCfg = Release|Any CPU
 		{E4A8FC11-2654-43C6-9BAD-901A871BF60D}.Release|x86.Build.0 = Release|Any CPU
+		{5F811470-592E-416E-A3B8-A5CB1C592322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F811470-592E-416E-A3B8-A5CB1C592322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F811470-592E-416E-A3B8-A5CB1C592322}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5F811470-592E-416E-A3B8-A5CB1C592322}.Debug|x64.Build.0 = Debug|Any CPU
+		{5F811470-592E-416E-A3B8-A5CB1C592322}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5F811470-592E-416E-A3B8-A5CB1C592322}.Debug|x86.Build.0 = Debug|Any CPU
+		{5F811470-592E-416E-A3B8-A5CB1C592322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F811470-592E-416E-A3B8-A5CB1C592322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F811470-592E-416E-A3B8-A5CB1C592322}.Release|x64.ActiveCfg = Release|Any CPU
+		{5F811470-592E-416E-A3B8-A5CB1C592322}.Release|x64.Build.0 = Release|Any CPU
+		{5F811470-592E-416E-A3B8-A5CB1C592322}.Release|x86.ActiveCfg = Release|Any CPU
+		{5F811470-592E-416E-A3B8-A5CB1C592322}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
