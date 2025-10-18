@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeeksTest2", "GeeksTest2\Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temperature", "Temperature\Temperature.csproj", "{12BF3B33-B60A-4FD3-BA5F-7DC238ABC8CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld3", "HelloWorld3\HelloWorld3.csproj", "{49355685-5B3D-42E5-9793-87F548D87CCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,18 @@ Global
 		{12BF3B33-B60A-4FD3-BA5F-7DC238ABC8CC}.Release|x64.Build.0 = Release|Any CPU
 		{12BF3B33-B60A-4FD3-BA5F-7DC238ABC8CC}.Release|x86.ActiveCfg = Release|Any CPU
 		{12BF3B33-B60A-4FD3-BA5F-7DC238ABC8CC}.Release|x86.Build.0 = Release|Any CPU
+		{49355685-5B3D-42E5-9793-87F548D87CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49355685-5B3D-42E5-9793-87F548D87CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49355685-5B3D-42E5-9793-87F548D87CCD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{49355685-5B3D-42E5-9793-87F548D87CCD}.Debug|x64.Build.0 = Debug|Any CPU
+		{49355685-5B3D-42E5-9793-87F548D87CCD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{49355685-5B3D-42E5-9793-87F548D87CCD}.Debug|x86.Build.0 = Debug|Any CPU
+		{49355685-5B3D-42E5-9793-87F548D87CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49355685-5B3D-42E5-9793-87F548D87CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49355685-5B3D-42E5-9793-87F548D87CCD}.Release|x64.ActiveCfg = Release|Any CPU
+		{49355685-5B3D-42E5-9793-87F548D87CCD}.Release|x64.Build.0 = Release|Any CPU
+		{49355685-5B3D-42E5-9793-87F548D87CCD}.Release|x86.ActiveCfg = Release|Any CPU
+		{49355685-5B3D-42E5-9793-87F548D87CCD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
